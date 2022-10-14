@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1 ALIGN="CENTER"> <B> NESTED TABLES </B> </H1>
+    <!-- table starts here -->
+    <table border="2" align="CENTER">
+        <!-- table head starts here -->
+        <thead>
+            <th>HEADER COLOUMN 1</th>
+            <th>HEADER COLOUMN 2</th>
+            <th>HEADER COLOUMN 3</th>
+            <th>HEADER COLOUMN 4</th>
+        </thead>
+        <!-- table head ends here -->
+        <!-- table row 1 starts here -->
+        <tr> 
+            <td height="50">ROW 2 - ITEM 1</td>
+            <td>ROW 2 - ITEM 2</td>
+            <td rowspan="2"> ROW 2: NESTED TABLE 1
+                <br>
+                <br>
+                <br>
+                <br>
+            <!-- NESTED TABLE 1 STARTS HERE -->
+            <TABLE border="2">
+              <TR>
+                <TD><B>ROW 1 HEADER</B></TD>
+                <TD>ITEM</TD>
+              </TR>
+              <TR>
+                <TD><B>ROW 2 HEADER</B></TD>
+                <TD>ITEM</TD>
+              </TR>
+              <TR>
+                <TD><B>ROW 2 HEADER</B></TD>
+                <TD>ITEM</TD>
+              </TR>
+            </TABLE>
+            <!-- NESTED TABLE 1 ENDS HERE -->
+            </td>
+            <td>ROW 2 - ITEM 4 <br> A second line</td>
+        </tr>
+    <!-- table row 1 ends here -->
+    <!-- table row 2 starts here -->
+    <tr>
+        <td> ROW 3: NESTED TABLE 2 
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- nested table 2 starts here -->
+            <table border="2">
+                <tr>
+                    <td><b>ROW 1 HEADER</b></td>
+                    <TD>ITEM</TD>
+                </tr>
+                <tr>
+                    <td><b>ROW 2 HEADER</b></td>
+                    <TD>ITEM</TD>
+                </tr>
+            </table>
+            <!-- nested table 2 ends here -->
+        </td>
+        <td rowspan="1"> ROW 3 - ITEM 2</td>
+        <td rowspan="2"> ROW 3 - ITEM 3</td>
+    </tr>
+    <!-- table row 2 ends here -->
+    <!-- table row 3 starts here -->
+    <tr>
+        <td>ROW 4 - ITEM 1</td>
+        <TD> ROW 4 - ITEM 2</TD>
+        <TD>ROW 4 - ITEM 3</TD>
+    </tr>
+    <!-- table row 3 ends here -->
+    <TFOOT>
+        <TD colspan="4"> ROW 5 - LAST ROW OF OUTER TABLE</TD>
+    </TFOOT>
+</table>
+<!-- table ends here -->
+</body>
+</html>  
